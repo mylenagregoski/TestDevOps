@@ -5,8 +5,9 @@ app = FastAPI()
 # 127.0.0.1:8000/
 @app.get("/")
 async def root():
-    return {"message":  "Hello World"}
+    return {"message":  "Olá, DevOps!"}
 
-@app.get("/funcaoteste")
+# 127.0.0.1:8000/teste
+@app.get("/formativa")
 async def funcaoteste():
-    return {"teste": "deu certo"}
+    return {"formativa": "deu certo"}

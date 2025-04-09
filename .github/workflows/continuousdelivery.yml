@@ -18,5 +18,3 @@ jobs:
           path: |
             '**.py'
             README.md
-
-  

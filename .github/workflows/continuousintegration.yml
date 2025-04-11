@@ -1,4 +1,4 @@
-name: Continuous Integration ci
+name: Continuous Integration
 on:
   pull_request:
     branches:
@@ -27,3 +27,9 @@ docker:
         # https://github.com/docker/setup-qemu-action
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
+      - name: Build
+        uses: docker/build-push-action@v6
+        with:
+           context: .
+           push: false
+           tags: user/app:latest

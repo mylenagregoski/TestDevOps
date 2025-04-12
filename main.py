@@ -13,7 +13,7 @@ class Estudante(BaseModel):
 
 @app.get("/helloword")
 async def root():
-    return {"message":  "Hello Word!"}
+    return {"message":  "Hello Word"}
 
 
 @app.get("/funcaoteste")

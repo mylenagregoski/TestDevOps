@@ -52,5 +52,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          push: True
+          push: false
           tags: user/app:latest

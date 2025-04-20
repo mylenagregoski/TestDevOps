@@ -1,4 +1,4 @@
-name: Continuous Integration ci
+name: Continuous Integration 
 on:
   pull_request:
     branches:
@@ -15,7 +15,6 @@ jobs:
         uses: advanced-security/python-lint-code-scanning-action@v1.1.2
         with:
           linter: pylint
-
 docker:
     runs-on: ubuntu-latest
     steps:

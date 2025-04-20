@@ -30,8 +30,7 @@ docker:
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-      -
-        name: Build
+      - name: Build
         uses: docker/build-push-action@v6
         with:
           context: .
@@ -43,7 +42,8 @@ discord:
     steps:
       - uses: actions/checkout@v4
       - name: Run Discord Webhook
-        uses: johnnyhuy/actions-discord-git-webhook@main
+        uses: Snidd1/discord-commits@v1.6
         with:
           webhool_url: ${{ secrets.DISCORD_WEBHOOK }}
-
+          template: "avatar-with-link"
+          include-extras: True

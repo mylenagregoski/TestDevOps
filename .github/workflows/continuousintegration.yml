@@ -42,8 +42,8 @@ discord:
     steps:
       - uses: actions/checkout@v4
       - name: Run Discord Webhook
-        uses: Snidd1/discord-commits@v1.6
+        uses: Snidd1/discord-commits@v1.5
         with:
-          webhool_url: ${{ secrets.DISCORD_WEBHOOK }}
+          webhool: ${{ secrets.DISCORD_WEBHOOK }}
           template: "avatar-with-link"
-          include-extras: True
+          include-extras: true

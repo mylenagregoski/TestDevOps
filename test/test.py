@@ -9,6 +9,7 @@ async def test_root():
     result = await root()
     assert result() == {"message": "Hello"}
 
+
 @pytest.mark.asyncio
 async def test_funcaoteste():
     with patch('random .radint', return_value=12345):

@@ -2,12 +2,12 @@ from src.main import *
 from unittest.mock import patch
 
 import pytest
-
+import pytest_asyncio
 
 @pytest.mark.asyncio
 async def test_root():
     result = await root()
-    assert result() == {"message": "Hello"}
+    assert result() == {"message": "Olá"}
 
 
 @pytest.mark.asyncio

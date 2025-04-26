@@ -1,4 +1,4 @@
-name: Continuous Integration ci
+name: Continuous Integration de
 on:
   pull_request:
     branches:
@@ -49,4 +49,4 @@ jobs:
       - name: Test with pytest
         run: |
           pip install pytest pytest-cov pytest-asyncio
-          pytest TestDevOps/test/test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+          pytest test/test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html

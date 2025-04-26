@@ -4,6 +4,7 @@ from unittest.mock import patch
 import pytest
 import pytest_asyncio
 
+
 @pytest.mark.asyncio
 async def test_root():
     result = await root()

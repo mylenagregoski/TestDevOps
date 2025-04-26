@@ -1,4 +1,4 @@
-from src.main import *
+from TestDevOps.src.main import *
 from unittest.mock import patch
 
 import pytest
@@ -11,11 +11,10 @@ async def test_root():
 
 
 @pytest.mark.asyncio
-async def test_funcaoteste():
-    with patch('random .radint', return_value=12345):
+async def test_funcao_teste():
+    with patch('src.main.random.randint', return_value=12345):
         result = await funcaoteste()
-
-    assert result == {"teste": True, "num_aleatorio": 12345}
+        assert result == {"teste": True, "num_aleatorio": 12345}
 
 @pytest.mark.asyncio
 async def test_create_estudante():
